@@ -12,6 +12,3 @@ concurrency:
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    with:
-      shield: myax
-      board: nice_nano_v2
