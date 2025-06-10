@@ -1,4 +1,4 @@
-if SHIELD_MYAX_LEFT
+if SHIELD_MYAX
 
 config ZMK_KEYBOARD_NAME
     default "Myax"
@@ -8,7 +8,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_MYAX_LEFT || SHIELD_MYAX_RIGHT
+if SHIELD_MYAX
 
 config ZMK_SPLIT
     default y
