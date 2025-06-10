@@ -12,8 +12,3 @@ concurrency:
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    secrets: inherit
-    env:
-      SHIELD: myax
-      CONFIG_ZMK_BOARD: nice_nano_v2
-      EXTRA_CMAKE_ARGS: -DCONFIG_ZMK_STUDIO=y -DSNIPPET=studio-rpc-usb-uart
