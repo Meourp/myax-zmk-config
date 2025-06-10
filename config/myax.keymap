@@ -1,0 +1,40 @@
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                /* Row 1 */ &kp ESC     &kp N1      &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0      &kp BSPC
+                /* Row 2 */ &kp TAB     &kp Q       &kp W      &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O      &kp P       &kp BSLH
+                /* Row 3 */ &kp LCTRL   &kp A       &kp S      &kp D      &kp F      &kp G      &kp H      &kp J      &kp K      &kp L      &kp SCLN    &kp SQT
+                /* Row 4 */ &lt 1 LSHFT  &kp Z       &kp X      &kp C      &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT    &kp SLASH   &kp ENTER
+                /* Row 5 */ &kp LGUI    &kp LEFT    &kp RIGHT  &kp LALT   &mo 2      &kp MINUS  &kp EQUAL  &kp SPACE  &kp UP     &kp DOWN   &kp LBKT    &kp RBKT
+            >;
+        };
+
+        shift_layer {
+            bindings = <
+                /* Row 1 */ &trans      &kp EXCL    &kp AT     &kp HASH   &kp DLLR   &kp PERC   &kp CARET  &kp AMPS   &kp ASTERK &kp LPAR   &kp RPAR    &trans
+                /* Row 2 */ &trans      &trans      &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans      &kp PIPE
+                /* Row 3 */ &trans      &trans      &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp COLON   &kp DQT
+                /* Row 4 */ &trans      &trans      &trans     &trans     &trans     &trans     &trans     &trans     &kp LT     &kp GT     &kp QMARK   &trans
+                /* Row 5 */ &trans      &trans      &trans     &trans     &trans     &kp UNDERSCORE &kp PLUS &trans     &trans     &trans     &kp LCBR    &kp RCBR
+            >;
+        };
+
+        fn_layer {
+            bindings = <
+                /* Row 1 */ &trans      &kp F1      &kp F2     &kp F3     &kp F4     &trans     &trans     &kp F8     &kp F9     &kp F10    &kp F11     &kp F12
+                /* Row 2 */ &trans      &trans      &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans      &trans
+                /* Row 3 */ &trans      &trans      &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans      &trans
+                /* Row 4 */ &trans      &trans      &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans      &trans
+                /* Row 5 */ &trans      &trans      &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans      &trans
+            >;
+        };
+    };
+};
